@@ -353,3 +353,7 @@ footer {
       main .inputs label {
         margin-bottom: 20px;
         width: 100%; } }
+
+@media screen and (max-width: 300px) {
+  main .results .userEmoji {
+    margin-left: 0; } }
