@@ -14,7 +14,7 @@ app.getFaceData = function (image) {
             headers: {
                 "Content-Type": "application/json",
                 "Accept": "application/json",
-                "Ocp-Apim-Subscription-Key": "d4200ef51ed143d29345415ba54ad725"
+                "Ocp-Apim-Subscription-Key": "SUBSCRIPTION KEY"
             },
             method: "POST",
             data: '{"url": ' + '"' + image + '"}'
@@ -32,7 +32,7 @@ app.getFaceData = function (image) {
         xhr.responseType = 'json';
         xhr.setRequestHeader('Content-Type', 'application/octet-stream');
         xhr.setRequestHeader('Accept', 'application/json');
-        xhr.setRequestHeader('Ocp-Apim-Subscription-Key', 'd4200ef51ed143d29345415ba54ad725');
+        xhr.setRequestHeader('Ocp-Apim-Subscription-Key', 'SUBSCRIPTION KEY');
         xhr.send(image);
     }
 };
